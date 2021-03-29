@@ -8,8 +8,24 @@
     <artifactId>HomeTask</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>15</source>
+                    <target>15</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <modules>
         <module>Hometask1.2</module>
+        <module>Hometask1.3</module>
+        <module>Hometask1.4</module>
+        <module>Hometask1.5</module>
+        <module>Hometask1.6</module>
     </modules>
 
     <properties>

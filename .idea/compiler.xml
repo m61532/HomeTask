@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Hometask1.2" />
+        <module name="Hometask_1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hometas1.6" target="15" />
+      <module name="Hometask1.3" target="15" />
+      <module name="Hometask1.4" target="15" />
+      <module name="Hometask1.5" target="15" />
+      <module name="Hometask1.6" target="15" />
+    </bytecodeTargetLevel>
   </component>
 </project>
