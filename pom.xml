@@ -21,16 +21,9 @@
         </plugins>
     </build>
     <modules>
-        <module>Hometask1.2</module>
-        <module>Hometask1.3</module>
-        <module>Hometask1.4</module>
-        <module>Hometask1.5</module>
-        <module>Hometask1.6</module>
+        <module>Hometask_1</module>
+        <module>Something</module>
     </modules>
 
-    <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
-    </properties>
 
 </project>
