@@ -16,6 +16,7 @@
       <module name="Hometask1.4" target="15" />
       <module name="Hometask1.5" target="15" />
       <module name="Hometask1.6" target="15" />
+      <module name="Hometask_2" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
