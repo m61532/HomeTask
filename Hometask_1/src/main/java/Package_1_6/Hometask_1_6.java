@@ -6,14 +6,14 @@ public class Hometask_1_6 {
 
     public static class Notebook {
 
-        String[] note_entries = new String[0];
+        String[] noteEntries = new String[0];
 
         public void show_note_entries() {
-            int n = note_entries.length;
+            int n = noteEntries.length;
             System.out.println(n);
             if (n > 0) {
-                for (int i = 0; i < note_entries.length; i++) {
-                    System.out.println("(" + (i + 1) + ") " + note_entries[i]);
+                for (int i = 0; i < noteEntries.length; i++) {
+                    System.out.println("(" + (i + 1) + ") " + noteEntries[i]);
                 }
 
             } else {
@@ -102,7 +102,7 @@ public class Hometask_1_6 {
         Editnotebook edit = new Editnotebook();
 
         Scanner input = new Scanner(System.in);
-        edit.add_entries("123", data.note_entries);
+        edit.add_entries("123", data.noteEntries);
 
 
         while (true) {
@@ -123,7 +123,7 @@ public class Hometask_1_6 {
                 case ("Добавить"):
                     System.out.println("Введите запись или Отмена для отмены операции");
                     String note = input.nextLine();
-                    data.note_entries = edit.add_entries(note, data.note_entries);
+                    data.noteEntries = edit.add_entries(note, data.noteEntries);
 
                     break;
                 case ("Удалить"):
@@ -131,7 +131,7 @@ public class Hometask_1_6 {
                     String delete_num = input.nextLine();
                     if (delete_num.equals("Отмена")) {
                         int n = Integer.parseInt(delete_num);
-                        data.note_entries = edit.delete_entries(n, data.note_entries);
+                        data.noteEntries = edit.delete_entries(n, data.noteEntries);
                     }
                     break;
                 case ("Редактировать"):
@@ -140,13 +140,13 @@ public class Hometask_1_6 {
                     int m = Integer.parseInt(renote_num);
                     System.out.println("Введите новую запись в строку " + m + "\n");
                     m -= 1;
-                    System.out.println("Старая запись:\n\n" + data.note_entries[m]);
+                    System.out.println("Старая запись:\n\n" + data.noteEntries[m]);
                     String renote = input.nextLine();
                     if (renote.equals("Отмена")) {
                         break;
                     }
                     else {
-                        data.note_entries = edit.edit_entries(renote, m, data.note_entries);
+                        data.noteEntries = edit.edit_entries(renote, m, data.noteEntries);
                     }
                     break;
                 default:
